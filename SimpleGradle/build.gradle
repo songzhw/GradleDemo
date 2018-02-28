@@ -1,0 +1,5 @@
+task (first) {
+	doLast {
+		println "end"
+	}
+}
