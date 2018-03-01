@@ -3,3 +3,17 @@ task (first) {
 		println "end"
 	}
 }
+
+// =================================================
+
+class SecondTask extends DefaultTask {
+	def prefix = '[szw]'
+
+	@TaskAction
+	def act(){
+		println "SecondTask [$prefix] $project.gradle.gradleVersion"
+	}
+}
+
+task second(type: SecondTask) //这其实就相当于 Task second = new SecondTask()
+
