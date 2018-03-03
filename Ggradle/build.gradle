@@ -22,5 +22,5 @@ task info(type: CustomTask){
 
 task convertFile(type: ca.six.lib.ReaderTask){
     sourceFile = file('users.xml')
-    outputFile = file("output.xml")
+    outputFile = file("output.txt")
 }

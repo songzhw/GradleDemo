@@ -12,9 +12,11 @@ class ReaderTask extends DefaultTask{
     @TaskAction
     def convertFile(){
         def xml = new XmlSlurper().parse(sourceFile)
+        println "szw 01 $xml"
         outputFile.withPrintWriter {writer ->
-            xml.users.each { user ->
-                writer.println("${user.name} - ${user.email}")
+            println "szw 02 ${xml.user}"
+            xml.user.each { ur ->
+                writer.println("${ur.name} - ${ur.email}")
             }
         }
     }
