@@ -27,3 +27,6 @@ task convertFile(type: ca.six.lib.ReaderTask){
 
 import ca.six.lib.SimplePlugin
 apply plugin: SimplePlugin
+
+import ca.six.lib.MidPlugin
+apply plugin: MidPlugin
