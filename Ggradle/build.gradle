@@ -30,3 +30,6 @@ apply plugin: SimplePlugin
 
 import ca.six.lib.MidPlugin
 apply plugin: MidPlugin
+mid {
+    midKey = "ping"
+}
