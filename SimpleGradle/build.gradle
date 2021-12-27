@@ -16,3 +16,16 @@ class SecondTask extends DefaultTask {
 
 task second(type: SecondTask) //这其实就相当于 Task second = new SecondTask()
 
+// =================================================
+// 先执行first任务, 完了才执行SecondTask任务
+task san  { 
+	doLast {println("san") }
+}
+
+task si {
+	dependsOn first, san
+	doLast {
+		println("肆")
+	}
+} //=> first, san, 肆
+
