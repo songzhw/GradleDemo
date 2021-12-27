@@ -1,19 +1,18 @@
 task (first) {
-	doLast {
-		println "end"
-	}
-}
+	doFirst { println "start" }
+	doLast  { println "end"	}
+} //=> 日志:  start, end
 
 // =================================================
 
 class SecondTask extends DefaultTask {
-	def prefix = '[szw]'
+	@Internal def prefix = '[szw]'
 
 	@TaskAction
 	def act(){
-		println "SecondTask [$prefix] $project.gradle.gradleVersion"
+		println "SecondTask [$prefix] v$project.gradle.gradleVersion"
 	}
-}
+} //=> SecondTask [[szw]] v7.3.1 (2021.12.26)
 
 task second(type: SecondTask) //这其实就相当于 Task second = new SecondTask()
 
