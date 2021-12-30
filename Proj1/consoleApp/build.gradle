@@ -3,11 +3,12 @@ plugins {
     id 'application'
 }
 
-group = 'ca.six.gproj.proj1'
+group = 'ca.six.gproj1.app'
 version = '1.0.0'
 
 dependencies {
     implementation project(":lib1")
+    implementation project(":lib2")
 
     testImplementation 'org.jetbrains.kotlin:kotlin-test'
 }

@@ -3,6 +3,8 @@ plugins {
     id 'application'
 }
 
+apply from "tools/version.gradle"
+
 group = 'ca.six.gproj1.lib1'
 version = '1.0.0'
 
