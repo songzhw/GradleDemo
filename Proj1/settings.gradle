@@ -1,0 +1,6 @@
+rootProject.name = 'Proj1'
+
+include(':consoleApp')
+include(':lib1')
+include(':lib2')
+
