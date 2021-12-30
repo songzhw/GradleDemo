@@ -23,5 +23,5 @@ compileTestKotlin {
 }
 
 application {
-    mainClassName = 'MainKt'
+    mainClassName = 'Lib1Kt'
 }
