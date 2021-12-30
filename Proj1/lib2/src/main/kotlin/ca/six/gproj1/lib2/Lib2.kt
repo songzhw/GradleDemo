@@ -1,3 +1,5 @@
+package ca.six.gproj1.lib2
+
 class Lib2 {
     val id = "lib2"
 

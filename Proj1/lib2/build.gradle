@@ -3,7 +3,7 @@ plugins {
     id 'application'
 }
 
-group = 'ca.six.gproj.proj1'
+group = 'ca.six.gproj1.lib2'
 version = '1.0.0'
 
 dependencies {
