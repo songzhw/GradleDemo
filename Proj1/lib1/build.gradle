@@ -1,7 +1,7 @@
-apply plugin: 'org.jetbrains.kotlin.jvm'
-apply plugin: 'application'
-apply from: "tools/version.gradle"
-
+plugins {
+    id 'org.jetbrains.kotlin.jvm' version '1.6.10'
+    id 'application'
+}
 
 group = 'ca.six.gproj1.lib1'
 version = '1.0.0'
