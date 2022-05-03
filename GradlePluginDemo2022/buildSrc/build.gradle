@@ -5,6 +5,9 @@ plugins {
 dependencies {
     implementation gradleApi()
     implementation localGroovy()
+
+    implementation "com.github.kittinunf.fuel:fuel:2.3.1"
+    implementation "com.google.code.gson:gson:2.8.9"
 }
 
 repositories {
