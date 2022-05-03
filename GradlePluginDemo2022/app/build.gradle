@@ -15,7 +15,12 @@ class HiPlugin implements Plugin<Project>{
     }
 }
 
-
+tasks.configureEach{task ->
+    if (task.name == "generateDebugBuildConfig" |
+            task.name == "generateProductionBuildConfig") {
+        task.dependsOn "hi world"
+    }
+}
 
 android {
     compileSdk 32
