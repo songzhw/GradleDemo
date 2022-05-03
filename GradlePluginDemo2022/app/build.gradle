@@ -1,8 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
-    id "ca.six.g2"
-    id "ca.six.g3"
+    id "ca.six.g4"
 }
 apply plugin: HiPlugin
 
