@@ -2,6 +2,20 @@ plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
 }
+apply plugin: HiPlugin
+
+class HiPlugin implements Plugin<Project>{
+    @Override
+    void apply(Project project) {
+        project.task("hi world") {
+            doLast {
+                println "szw say hi world"
+            }
+        }
+    }
+}
+
+
 
 android {
     compileSdk 32
