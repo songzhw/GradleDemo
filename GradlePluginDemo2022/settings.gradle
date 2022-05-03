@@ -14,4 +14,3 @@ dependencyResolutionManagement {
 }
 rootProject.name = "GradlePluginDemo2022"
 include ':app'
-include ':buildSrc'
