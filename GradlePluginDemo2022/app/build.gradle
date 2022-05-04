@@ -17,6 +17,10 @@ class HiPlugin implements Plugin<Project>{
     }
 }
 
+myBackend {
+    id = 33
+}
+
 tasks.configureEach{task ->
     if (task.name == "generateDebugBuildConfig" |
             task.name == "generateProductionBuildConfig") {
