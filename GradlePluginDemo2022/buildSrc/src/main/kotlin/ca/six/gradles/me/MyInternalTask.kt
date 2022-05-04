@@ -4,7 +4,7 @@ import com.github.kittinunf.fuel.httpGet
 import org.gradle.api.DefaultTask
 import org.gradle.api.tasks.TaskAction
 
-class MyInternalTask : DefaultTask() {
+open class MyInternalTask : DefaultTask() {
 
     @TaskAction
     fun callBackend() {
