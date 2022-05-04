@@ -6,14 +6,7 @@ import org.gradle.api.Project
 
 class MyInternalPlugin: Plugin<Project>  {
     override fun apply(project: Project) {
-        project.task("s4") {
-            doLast{
-                "http://192.168.2.246:8899/info?id=11"
-                    .httpGet()
-                    .responseString{req, resp, result ->
-                        println(result.get())
-                    }
-            }
-        }
+        // 注册一个新task, 提供name与具体干活的class
+        project.tasks.register("fuelCall", MyInternalTask::class.java)
     }
 }
